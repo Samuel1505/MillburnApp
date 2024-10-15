@@ -1,14 +1,26 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import useCachedResources from '@/hooks/useCachedResources';
+import RootNavigation from '@/src/screens/navigation/RootNavigation';
+import React from 'react'
+import { StatusBar, Text, View } from 'react-native'
+import styled from "styled-components/native";
 
-export class index extends Component {
-  render() {
-    return (
-      <View className="bg-orange-500 flex-1 justify-center items-center">
-        <Text className='text-white text-3xl font-semibold'> textInComponent </Text>
-      </View>
-    )
+const index = () =>  {
+
+  const isLoadingComplete = useCachedResources();
+
+  if (!isLoadingComplete) {
+    return null;
   }
-}
+  return (
+    <Container>
+      <StatusBar  />
+      <RootNavigation />
+    </Container>
+    );
+  };
 
-export default index
+export default index;
+
+const Container = styled(View)`
+flex: 1; ` 
+;

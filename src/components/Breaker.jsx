@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
+import Animated, {FadeInRight} from "react-native-reanimated";
 
-export class Breaker extends Component {
-  render() {
+const Breaker  = () => {
     return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
+      <Animated.View>
+        <Text> Breaker </Text>
+      </Animated.View>
     )
   }
-}
 
 export default Breaker

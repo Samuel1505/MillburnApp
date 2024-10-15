@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 
-const index = () => {
+const TabNavigation = () => {
     return(
-        <View>
+        <View className='flex-1 bg-blue-400 justify-center items-center' >
 
-        <Text>index  </Text>
+        <Text>TabNavigation  </Text>
         </View>
     )
 }
-export default index 
+export default TabNavigation 
