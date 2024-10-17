@@ -16,7 +16,9 @@ const RegisterScreen = () => {
     const [password, setPassword] = useState("");
     const [isLoading, setisLoading] = useState(false);
 
-    const {navigate: navigateAuth}: NavigationProp<AuthNavigationType> = useNavigation()
+    const {navigate: navigateAuth}: NavigationProp<AuthNavigationType> = useNavigation();
+
+    
 
     return(
         <View className="flex-1">
@@ -88,14 +90,14 @@ const RegisterScreen = () => {
 
                     </Animated.View>
 
-                    {/* Login Buuton */}
+                    {/* Register Buuton */}
 
                     <Animated.View 
                     className="w-full justify-start"
                     entering={FadeInDown.duration(100).delay(300).springify()}
                     >
                         <View className="pb-6">
-                            <Button title={"Login"} />
+                            <Button title={"Sign up"} />
 
                         </View>
 

@@ -31,7 +31,7 @@ const WelcomeScreen = () => {
                         <View>
                             <View className="w-20 h-20 overflow-hidden">
                                 <Image
-                                    source={require("../../../assets/images/log.png")}
+                                    source={require("../../../assets/images/logo.png")}
                                     placeholder={blurhash}
                                     contentFit="cover"
                                     transition={1000}
