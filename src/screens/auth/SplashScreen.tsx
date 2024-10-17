@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { StatusBar, Text, View } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
+import { Text, View} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useColorScheme } from "nativewind"
 import Animated, { FadeInRight } from "react-native-reanimated"
@@ -15,9 +16,9 @@ const SplashScreen = () => {
     const blurhash = "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj["
 
     useEffect(() => {
-       setTimeout(() => {
-           navigate("Welcome");
-       }, 2000);  
+      setTimeout(() => {
+          navigate("Welcome");
+    }, 2000);  
     }, []);
 
     return(
