@@ -5,13 +5,14 @@ import React, { useEffect } from 'react'
 import { StatusBar, Text, View } from 'react-native'
 import styled from "styled-components/native";
 
+
 const index = () =>  {
 
   const isLoadingComplete = useCachedResources();
 
   const {session, user} = useUserStore();
 
-  useEffect( () => console.log(user, session), [user, session])
+  useEffect( () => console.log(user, session), [user, session]);
 
   if (!isLoadingComplete) {
     return null;
