@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 
-const SearchNavigation = () => {
+const LoanNavigation = () => {
     return(
         <View>
 
-        <Text>SearchNavigation </Text>
+        <Text>LoanNavigation </Text>
         </View>
     )
 }
-export default SearchNavigation 
+export default LoanNavigation 
